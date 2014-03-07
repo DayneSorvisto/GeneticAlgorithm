@@ -72,8 +72,6 @@ public class Interpreter
     }
     public static void main (String [] args) throws IOException
     {
-        InputStreamReader input = new InputStreamReader(new FileInputStream("file.txt"));
-        BufferedReader bufferRead = new BufferedReader(input);
         int c;
         int [] data = new int[TAPESIZE];
         int i = 0;
