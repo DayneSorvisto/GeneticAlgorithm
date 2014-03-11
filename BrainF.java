@@ -1,7 +1,7 @@
 package com.geneticalgorithm
 import java.util.*;
 import java.io.*;
-public class BrainFuck
+public class BrainF
 {
     private static final int TAPESIZE = 30000;
     public static int[] convert (String s)
@@ -29,9 +29,7 @@ public class BrainFuck
         charpointer = charpointer1;
         int limit = 0;
         // prevents infinite loops required since we cant solve the halting problem
-        while (charpointer &lt;
-        c.length && limit &lt;
-        3000)
+        while (charpointer < c.length && limit < 3000)
         {
             limit++;
             switch((char) c[charpointer])
@@ -63,8 +61,7 @@ public class BrainFuck
                 if (tape[datapointer] == 0)
                 {
                     int i = 1;
-                    while (i &gt;
-                    0)
+                    while (i > 0)
                     {
                         char c2 = (char) c[++charpointer];
                         if (c2 == Token.LEFT)
@@ -77,8 +74,7 @@ public class BrainFuck
                 break;
                 case Token.RIGHT:
                 int i = 1;
-                while ( i &gt;
-                0 )
+                while ( i > 0)
                 {
                     char c2 = (char) c[--charpointer];
                     if (c2 == Token.LEFT)
