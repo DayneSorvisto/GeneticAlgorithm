@@ -1,4 +1,4 @@
-package com.geneticalgorithm
+package com.geneticalgorithm;
 import java.util.*;
 import java.io.*;
 public class BrainF
